@@ -1,0 +1,35 @@
+//For a game I'm making ;)
+
+//Story: Adamu, is the 'First Chief of the Odena Tribe". 
+//He was chosen to lead his people with his wife, Ivi. He is reponsible for started the Odena Tribe, 
+//though the tribe woulbe be split up into the two clans, the Setites and Kaninites.
+
+background(201, 193, 193);
+
+var adamu = function(){
+strokeWeight(2);
+fill(166, 123, 76);
+rect(153,93,72,112,4);
+
+//clothes
+stroke(1);
+fill(138, 113, 98);
+rect(154,142,70,62,4);
+//hand
+fill(166, 123, 76);
+ellipse(150,162,23,23);//left hand
+ellipse(226,162,23,23);//right hand
+//face
+fill(0, 0, 0);
+ellipse(174,122,10,10);//left eye
+ellipse(201,122,10,10);//right eye
+rect(154,94,71,12,4);//hair
+//text
+fill(62, 84, 49);
+textFont(createFont("Century Gothic"), 32);
+text("Adamu",135,246);
+textSize(20);
+text("First Chief of the Odena Tribe",46,276);
+};
+
+adamu();

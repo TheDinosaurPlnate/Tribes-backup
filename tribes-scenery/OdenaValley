@@ -1,0 +1,39 @@
+/**
+ * This is the land of Odena, land of the Odena Tribe/Odenites.
+
+**/
+
+//detirmines the scene
+var scene = "";
+//detirmines the x position of the cloud
+var cloudX = 332;
+
+var odenaValley = function(){
+    //Name of certain part of Odena
+    scene = "Odena Valley";
+    noStroke();
+    background(72, 205, 212);
+    //hills
+    {    //back hill
+        fill(50, 140, 23);
+        ellipse(288,360,496,372);
+        //front hill
+        fill(54, 163, 21);
+        ellipse(162,371,496,372);
+    }
+    //sun
+    {
+        fill(255, 208, 0);
+        ellipse(56,67,200,200);
+        //shading
+        fill(227, 183, 22);
+        arc(56,67,200,200,-59,121);
+    }
+    //cloud
+    {
+        fill(255, 255, 255);
+        ellipse(cloudX,67,123,45);
+    }
+};
+
+odenaValley();
